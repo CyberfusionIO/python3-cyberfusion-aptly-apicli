@@ -1,0 +1,29 @@
+python3-cyberfusion-aptly-apicli (1.0.2.1.1) unstable; urgency=low
+
+  - Publish to PyPI
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 21 Aug 2024 17:29:00 +0200
+
+python3-cyberfusion-aptly-apicli (1.0.2.1) unstable; urgency=low
+
+  - Update dependency on common
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 4 Oct 2022 18:44:00 +0200
+
+python3-cyberfusion-aptly-apicli (1.0.2) unstable; urgency=low
+
+  - Use new GitLab CI template
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 31 Aug 2022 10:46:00 +0200
+
+python3-cyberfusion-aptly-apicli (1.0.1) unstable; urgency=low
+
+  - Fix broken authentication
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 30 Aug 2022 11:21:00 +0200
+
+python3-cyberfusion-aptly-apicli (1.0) unstable; urgency=low
+
+  - Initial release
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Mon, 29 Aug 2022 16:06:00 +0200
