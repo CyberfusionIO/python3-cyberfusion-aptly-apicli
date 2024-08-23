@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="python3-cyberfusion-aptly-apicli",
-    version="1.0.2.1.1",
+    version="1.0.2.2",
     description="API library for Aptly.",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -23,4 +23,5 @@ setup(
             "aptly-package-upload-add=cyberfusion.AptlyApiCli.package_upload_add:main",
         ]
     },
+    install_requires=["certifi==2022.9.24", "requests==2.28.1"],
 )
