@@ -23,7 +23,7 @@ stages:
 #     - pip install --no-cache-dir -r requirements/test.txt
 #     - cp cyberfusion.ci.cfg cyberfusion.cfg
 #     - pip install .
-#     - PYTHONPATH=$CI_PROJECT_DIR/src:/usr/lib/python3/dist-packages pytest -n 10 -vvv --cov-branch --cov=cyberfusion.AptlyApiCli --cov-config=.coveragerc --junitxml=report-pytest.xml
+#     - pytest -n 10 -vvv --cov-branch --cov=cyberfusion.AptlyApiCli --cov-config=.coveragerc --junitxml=report-pytest.xml
 #   artifacts:
 #     reports:
 #       junit: report-*.xml
