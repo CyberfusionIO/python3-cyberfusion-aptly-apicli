@@ -1,3 +1,9 @@
+python3-cyberfusion-aptly-apicli (1.0.2.2.2) unstable; urgency=low
+
+  - Re-add missing Common dependency
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Fri, 23 Aug 2024 10:23:00 +0200
+
 python3-cyberfusion-aptly-apicli (1.0.2.2.1) unstable; urgency=low
 
   - Create /etc/cyberfusion
