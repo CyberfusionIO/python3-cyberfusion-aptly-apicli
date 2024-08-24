@@ -11,22 +11,16 @@ def upload_temporary_file(
 ) -> str:
     """Upload temporary file to add to repository later."""
     with open(path, "rb") as f:
-        request.POST(
-            f"/api/files/{directory_name}", data={}, files={"file": f}
-        )
+        request.POST(f"/api/files/{directory_name}", data={}, files={"file": f})
 
-        return request.execute()[
-            0
-        ]  # List of uploaded files; only uploaded one
+        return request.execute()[0]  # List of uploaded files; only uploaded one
 
 
 def add_package(
     request: AptlyApiRequest, *, repository_name: str, temporary_file_path: str
 ) -> None:
     """Add package to repository from already uploaded temporary file."""
-    request.POST(
-        f"/api/repos/{repository_name}/file/{temporary_file_path}", data={}
-    )
+    request.POST(f"/api/repos/{repository_name}/file/{temporary_file_path}", data={})
     request.execute()
 
 

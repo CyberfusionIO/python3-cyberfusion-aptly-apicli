@@ -36,9 +36,7 @@ class AptlyApiRequest:
     def __init__(self, config_file_path: Optional[str] = None) -> None:
         """Construct API request."""
         self.config = CyberfusionConfig(path=config_file_path)
-        self.serverurl = self.config.get(
-            self.SECTION_CONFIG, self.KEY_CONFIG_SERVERURL
-        )
+        self.serverurl = self.config.get(self.SECTION_CONFIG, self.KEY_CONFIG_SERVERURL)
 
         # Set default values of nullable variables for type annotations
 
@@ -60,9 +58,7 @@ class AptlyApiRequest:
             self.username = None
 
         try:
-            self.password = self.config.get(
-                self.SECTION_CONFIG, self.KEY_CONFIG_APIKEY
-            )
+            self.password = self.config.get(self.SECTION_CONFIG, self.KEY_CONFIG_APIKEY)
         except configparser.NoOptionError:
             self.password = None
 
@@ -178,9 +174,7 @@ class AptlyApiCall:
         self.headers = {}
 
         if self.content_type_header:
-            self.headers[self.CONTENT_TYPE_NAME_HEADER] = (
-                self.content_type_header
-            )
+            self.headers[self.CONTENT_TYPE_NAME_HEADER] = self.content_type_header
 
     def execute(self) -> None:
         """Execute API request."""
@@ -239,6 +233,4 @@ class AptlyApiCall:
                     self.request.json(), self.request.status_code
                 )
             else:
-                raise AptlyApiCallException(
-                    self.request.text, self.request.status_code
-                )
+                raise AptlyApiCallException(self.request.text, self.request.status_code)
