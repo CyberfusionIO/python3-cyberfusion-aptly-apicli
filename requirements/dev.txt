@@ -1,4 +1,4 @@
-mypy==1.12.1
+mypy==1.13.0
 pre-commit==3.8.0
 ruff==0.7.0
 types-certifi==2021.10.8.3
