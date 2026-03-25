@@ -12,7 +12,7 @@ authors = [
 ]
 dependencies = [
     "certifi==2025.11.12",
-    "requests==2.32.5",
+    "requests==2.33.0",
     "python3-cyberfusion-common~=2.12",
 ]
 
